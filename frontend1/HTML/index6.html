@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <!-- <style> -->
+    <!-- p{ -->
+    <!-- color: blueviolet; -->
+    <!-- background-color: darkgray; -->
+    <!-- } -->
+    <!-- </style> -->
+    <!-- <style> -->
+    <!-- #one { -->
+    <!-- color: darkgoldenrod; -->
+    <!-- background-color: blanchedalmond; -->
+    <!-- } -->
+    <!-- </style> -->
+    <!-- <style> -->
+    <!-- div > p { -->
+    <!-- color: chartreuse; -->
+    <!-- background-color: cadetblue; -->
+    <!-- } -->
+    <!-- </style> -->
+    <!-- <style> -->
+    <!-- p+h2{ -->
+    <!-- color: midnightblue; -->
+    <!-- background-color: cornsilk; -->
+    <!-- } -->
+    <!-- </style> -->
+    <!-- <style> -->
+    <!-- #Two{ -->
+    <!-- color: darkslategray; -->
+    <!-- background-color: lightsalmon; -->
+
+    <!-- } -->
+    <!-- </style> -->
+    <!-- <style> -->
+    <!-- h2::first-letter{ -->
+    <!-- text-transform: uppercase; -->
+    <!-- #Zero::first-line{ -->
+    <!-- font-size: 100px; -->
+    <!-- color: blue; -->
+    <!-- } -->
+    <!-- } -->
+    <!-- </style> -->
+    <!-- <style> -->
+    <!-- p[title]{ -->
+    <!-- background-color: chartreuse; -->
+    <!-- font-size:20px -->
+    <!-- } -->
+    <!-- </style> -->
+  </head>
+  <body>
+    <h1>CSS stands for Cascading style sheets</h1>
+    <p>Defines how our page looks</p>
+    <p>ways to apply styles to our webpage</p>
+    <ol>
+      <li>Applies style at tag level</li>
+      <li>style attribute is used for inline style</li>
+      <li>syntax:style="property1:value;property2:value2"</li>
+    </ol>
+    <p style="color: white; background: blue">This is paragraph</p>
+    <ol>
+      <li>Internal style sheet</li>
+      <li>Applies style to entire web pages</li>
+      <li>syntax:</li>
+      <!-- <style> selector{property1:value1;property1:value2;}</style> -->
+      <p>This is second paragraph</p>
+    </ol>
+    <ol>
+      <li>External style sheet</li>
+      <li>Applies style to multiple web pages</li>
+      <li>style should be in a separate file with .css extension</li>
+      <li>
+        Apply(link css file to html )style in a css file to any web page using
+        <link />tag
+      </li>
+      <p>syntax</p>
+      <!-- <link rel="stylesheet" href="path of css file"> -->
+    </ol>
+    <h2>CSS Selectors</h2>
+    <p>Using selectors we specify to which content style to be applied</p>
+    <p>Required for Internal & External CSS</p>
+    <ol>
+      <li>Simple selectors</li>
+      <li>Combinator selectors</li>
+      <li>Pseudo _Class selectors</li>
+      <li>pseudo-element selectors</li>
+      <li>attribute selectors</li>
+    </ol>
+    <h2>Simple selectors</h2>
+    <p>Tag Based</p>
+    <pre>
+        tagname{
+            property1:value
+            property2:value
+        }
+        ex: P{
+            color:white;
+            background:green;
+        }
+    </pre>
+    <h2>simple selectors</h2>
+    <p>id based</p>
+    <pre>
+        <p id="one">This is paragraph4</p>
+    </pre>
+    <h2>Combinator selectors</h2>
+    <p>This are four types</p>
+    <ol>
+      <li>child Selector (>)</li>
+      <li>Descendent selector(space)</li>
+      <li>Adjacent Sibling Selector(+)</li>
+      <li>General Sibling selector(~)</li>
+    </ol>
+    <p>Hi Yugandhar Ganne</p>
+    <p>Hi Venkat Rao</p>
+    <p>Hi Praveen</p>
+    <p>Hi Damodhar</p>
+    <p>Hi kiran</p>
+    <div>
+      <p>Hi Venkatesh</p>
+      <h2><p>Hi sreekanth</p></h2>
+    </div>
+    <div><p>Hi siva prasad reddy</p></div>
+    <h2>Adjacent Sibling Selector(+)</h2>
+    <div>
+      <p>This is paragraph1 in div</p>
+      <h2>This is heading2 in div</h2>
+      <h2>This is heading in div</h2>
+    </div>
+    <div>
+      <p>This is paragraph1 in div</p>
+      <h2>This is heading2 in div</h2>
+      <h2>This is heading in div</h2>
+    </div>
+    <div id="Two">
+      <p>This is paragraph001</p>
+      <h3>This is paragraph001</h3>
+      <h3>This is paragraph002</h3>
+    </div>
+    <p>
+      =================================================================================
+    </p>
+    <h3>pseudo elements selectors</h3>
+    <ul>
+      <li>used to style part of the selected elements</li>
+      <pre>
+    syntax
+    select::pseudo-element{
+      property:value;
+    }
+    commonly used pseudo elements
+    ::first-letter(:first-letter)
+    ::first-line(:first-line)
+    ::before(:before)
+    ::after(:after)
+    ::selection
+  </pre
+      >
+    </ul>
+    <div>
+      <h2>this is first heading2</h2>
+      <p id="Zero">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+        asperiores ipsam nihil dolor repellat dolores laboriosam nobis, in
+        aliquam officiis, ad vitae saepe mollitia error facere quae voluptate
+        quas, nulla ducimus quos ipsa blanditiis delectus eius! Quasi nihil
+        aliquam nesciunt est nobis mollitia quaerat eaque minima impedit
+        molestiae modi quo temporibus earum dolore, voluptate veniam. Quis neque
+        dicta rem natus magnam, alias delectus laudantium repellendus! Cumque
+        commodi corrupti cupiditate assumenda aspernatur. Praesentium fuga nam
+        laudantium placeat, minus debitis nesciunt reiciendis quas quam sint
+        quia ex quo voluptatem! Delectus voluptate, beatae neque excepturi optio
+        expedita fugiat amet porro illo, quasi ducimus!
+      </p>
+    </div>
+    <p>
+      ==================================================================================
+    </p>
+    <h3>Attribute selectors</h3>
+    <p>used to style an element with specified attribute or attribute value</p>
+    <pre>
+  selector[attribute name]{
+    property:value;
+  }
+</pre
+    >
+    <p title="paragraph ">This is paragraph1</p>
+    <p title="para">This is paragraph2</p>
+    <pre>
+  [attribute="value"] excelity match word para graph
+  [attribute~="value"]para
+  [attribute|="value"]para-
+  [attribute^="value"]beging word should match para
+  [attribute$="value"]ending para
+  [attribute*="value"]any word should me match
+</pre
+    >
+    <p>
+      ==============================================================================================================
+    </p>
+  </body>
+</html>
