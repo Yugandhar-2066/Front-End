@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box sizing</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #cb {
+        width: 200px;
+        height: 200px;
+        background-color: blanchedalmond;
+        padding: 20px;
+        border: 5px solid black;
+        box-sizing: content-box;
+        position: fixed;
+      }
+      #bb {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        padding: 20px;
+        border: 5px solid black;
+        box-sizing: border-box;
+      }
+      #first {
+        width: 250px;
+        height: 250px;
+        background-color: rgb(25, 36, 100);
+      }
+      #second {
+        width: 200px;
+        height: 200px;
+        background-color: #987654;
+      }
+      #third {
+        width: 200px;
+        height: 200px;
+        background-color: HSL(10, 20%, 50%);
+      }
+      #four {
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 0, 1, 0.6);
+      }
+      .c1 {
+        width: 10%;
+        height: 10%;
+        background-color: darksalmon;
+      }
+      .parent {
+        width: 1000px;
+        background-color: dodgerblue;
+      }
+      #d3 {
+        position: relative;
+        top: 100px;
+        left: 100px;
+      }
+      #d1 {
+        background-color: deeppink;
+        height: 60px;
+        width: 50px;
+      }
+      h3{
+        background: pink;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: solid 10px blue;
+        margin-left: 10px;
+      }
+      #p1{
+        margin-left: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>box-sizing</h2>
+    <div id="cb">content box</div>
+    <br />
+    <div id="bb">border box</div>
+    <h2>CSS Color formats</h2>
+    <pre>
+        Color Names
+        RGB-rgb(255,0,1)
+        Hexadecimal(#rrggbb)
+        HSL-hsl(10,20%,50%)
+        RGBA-rgba(255,0,1,0.6)
+        HSLA-hsla(10,20%,50%,0.6)
+    </pre>
+    <div id="first">Color Name or RGB</div>
+    <br />
+    <div id="second">Hexadecimal</div>
+    <br />
+    <div id="third">HSL</div>
+    <br />
+    <div id="four">rgba</div>
+    <h2>CSS Units</h2>
+    <pre>
+        Px(Absolute size)
+        % (Related to parent width/height)
+        vw/vh(Related to screen size) view width,view height
+        rem(related to root element font)1rem == 16px
+        em(related to its font size)
+    </pre>
+    <div class="parent">
+      <div class="c1">division 1</div>
+      <div class="c2">division 2</div>
+    </div>
+    <h2>CSS Positioning</h2>
+    <pre>
+        Static
+        Absolute
+        Relative
+        Fixed
+        Sticky
+     </pre
+    >
+    <div id="d1">division 1</div>
+    <div id="d2">division 2</div>
+    <div id="d3">division 3</div>
+    <h2>CSS BOX Model</h2>
+    <pre>
+        margin
+        border
+        padding
+        content
+    </pre>
+    <h3>This is h3 element</h3>
+    <p id="p1">
+      Cascading Style Sheets (CSS) is a stylesheet language used to describe the
+      presentation of a document written in HTML or XML (including XML dialects
+      such as SVG, MathML or XHTML). CSS describes how elements should be
+      rendered on screen, on paper, in speech, or on other media. CSS is among
+      the core languages of the open web and is standardized across Web browsers
+      according to W3C specifications. Previously, the development of various
+      parts of CSS specification was done synchronously, which allowed the
+      versioning of the latest recommendations. You might have heard about CSS1,
+      CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather,
+      everything is now CSS without a version number.
+    </p>
+  </body>
+</html>
