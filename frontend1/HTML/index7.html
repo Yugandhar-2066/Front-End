@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class</title>
+    <style>
+      #one:hover {
+        background-color: blue;
+      }
+      a:link {
+        color: pink;
+      }
+      a:visited {
+        color: yellow;
+      }
+      a:active {
+        color: burlywood;
+      }
+      p:target{
+        background-color: chartreuse;
+        color: brown;
+      }
+      input:focus,:required{
+        color:aqua;
+        background-color:blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>used to style an element based on the its state</p>
+    <pre>
+        selector:pseudo-class name{
+            proerty:value;
+        }
+    </pre>
+    <p id="one">This is paragraph1</p>
+    <a href="http://www.amazon.com" target="_blank">amazon</a>
+    <a href="#last">last</a>
+    <pre id="first">
+      A paragraph is a series of sentences that are organized and coherent, and
+      are all related to a single topic. Almost every piece of writing you do
+      that is longer than a few sentences should be organized into paragraphs.
+    </pre>
+    <pre>
+      Various educators teach rules governing the length of paragraphs. They may
+      say that a paragraph should be 100 to 200 words long, or be no more than
+      five or six sentences. But a good paragraph should not be measured in
+      characters, words, or sentences
+    </p>
+    <pre>
+      Probably the most effective way to achieve paragraph unity is to express
+      the central idea of the paragraph in a topic sentence. Topic sentences are
+      similar to mini thesis statements. Like a thesis statement, a topic
+      sentence has a specific main point. Whereas the thesis is the main point
+      of the essay, the topic sentence is the main point of the paragraph. Like
+      the thesis statement, a topic sentence has a unifying function. But a
+      thesis statement or topic sentence alone doesn’t guarantee unity. An essay
+      is unified if all the paragraphs relate to the thesis, whereas a paragraph
+      is unified if all the sentences relate to the topic sentence. Note: Not
+      all paragraphs need topic sentences. In particular, opening and closing
+      paragraphs, which serve different functions from body paragraphs,
+      generally don’t have topic sentences.
+    </pre>
+    <pre>
+      Probably the most effective way to achieve paragraph unity is to express
+      the central idea of the paragraph in a topic sentence. Topic sentences are
+      similar to mini thesis statements. Like a thesis statement, a topic
+      sentence has a specific main point. Whereas the thesis is the main point
+      of the essay, the topic sentence is the main point of the paragraph. Like
+      the thesis statement, a topic sentence has a unifying function. But a
+      thesis statement or topic sentence alone doesn’t guarantee unity. An essay
+      is unified if all the paragraphs relate to the thesis, whereas a paragraph
+      is unified if all the sentences relate to the topic sentence. Note: Not
+      all paragraphs need topic sentences. In particular, opening and closing
+      paragraphs, which serve different functions from body paragraphs,
+      generally don’t have topic sentences.
+    </pre>
+    <pre id="last">
+        Our typology is built on three dimensions: internality, types of participants,
+        and the degree of effective resistance. For our study, a civil war is any armed conflict
+        that involves (a) military action internal to the metropole, (b) the active participation of the 
+        national government, and (c) effective resistance by both sides. With these criteria, we differentiate 
+        civil wars from other types of internal violent conflicts.
+    </pre>
+    Name:<input type="text" required>
+    Email:<input type="email" required>
+    <pre>
+        :empty
+        :not()
+        :first-child
+        :nth-child()
+        :last-child()
+        :nth-last-child()
+        :nth-last-type()
+        :nth-of-type()
+        :only-of-type()
+        :first-of-type
+        :last-of-type
+    </pre>
+     
+    <a href="#first">first</a>
+  </body>
+</html>
